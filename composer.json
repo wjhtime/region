@@ -1,6 +1,6 @@
 {
     "name": "proton/region",
-    "description": "build region selector",
+    "description": "region selector",
     "license": "MIT",
     "authors": [
         {
