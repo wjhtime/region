@@ -17,7 +17,7 @@ class RegionServiceProvider extends ServiceProvider
     public function boot()
     {
         //路由文件
-        app('router')->group(['namespace' => __NAMESPACE__, 'middleware' => 'web'], function ($router) {
+        app('router')->group(['namespace' => __NAMESPACE__], function ($router) {
             $router->get('/region/index', 'RegionController@index');
             $router->get('/region/city', 'RegionController@getCity');
             $router->get('/region/county', 'RegionController@getCounty');
