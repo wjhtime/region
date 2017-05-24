@@ -13,7 +13,7 @@ Wjh/Region/RegionServiceProvider::class
 ```
 php artisan vendor:publish
 ```
-4.在控制期里调用
+4.在控制器里调用
 ```
 return app('region')->make();
 ```
