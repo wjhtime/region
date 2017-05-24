@@ -29,6 +29,10 @@ class RegionServiceProvider extends ServiceProvider
         $this->publishes([
             $viewPath => resource_path('views/vendor/region/index.blade.php'),
         ], 'view');
+        //资源文件
+        $this->publishes([
+            realpath(__DIR__ . '/../resource/jquery.min.js') => public_path('js/jquery.min.js')
+        ]);
 
     }
 
